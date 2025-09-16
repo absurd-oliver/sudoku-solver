@@ -13,6 +13,13 @@ const validateBtn = document.getElementById("validateBtn");
 const clearBtn = document.getElementById("clearBtn");
 const loadSampleBtn = document.getElementById("loadSample");
 
+/* redirect user to landing page */
+function redirect(where){
+  setInterval(() => {
+		window.location.href = where;
+	}, 1000);
+}
+
 /* Build the UI inputs and attach attributes for row/col */
 function buildUI(){
   gridEl.innerHTML = "";
